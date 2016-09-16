@@ -31,6 +31,7 @@ public class MainGame extends Activity implements View.OnTouchListener{
         gv.pause();
     }
 
+    @Override
     protected void onResume(){
         super.onResume();
         gv.resume();

@@ -15,7 +15,7 @@ public class GameView extends SurfaceView implements Runnable {
     boolean isRunning = true;
     float touchX, touchY;
 
-    Pool pool;
+    DataPool pool;
 
 
     public GameView(Context context) {
@@ -57,7 +57,7 @@ public class GameView extends SurfaceView implements Runnable {
         int fps = TARGET_FPS;
         long lastFpsTime = 0;
 
-        pool =  Pool.getInstance();
+        pool =  DataPool.getInstance();
         pool.write("testicek");
 
 

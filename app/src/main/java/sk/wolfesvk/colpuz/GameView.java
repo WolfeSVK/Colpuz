@@ -15,7 +15,7 @@ public class GameView extends SurfaceView implements Runnable {
     boolean isRunning = true;
     float touchX, touchY;
 
-    Variables variables;
+    Pool pool;
 
 
     public GameView(Context context) {
@@ -57,8 +57,8 @@ public class GameView extends SurfaceView implements Runnable {
         int fps = TARGET_FPS;
         long lastFpsTime = 0;
 
-        variables =  Variables.getInstance();
-        variables.write("testicek");
+        pool =  Pool.getInstance();
+        pool.write("testicek");
 
 
         while (isRunning) {

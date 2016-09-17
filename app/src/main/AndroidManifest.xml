@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainGame">
+            android:configChanges="orientation"
+            android:screenOrientaton="portrait"
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
